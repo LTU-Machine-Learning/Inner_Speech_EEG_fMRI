@@ -1,7 +1,7 @@
 # InnerSpeech_EEGFMRI
 This repo contains all the code for preprocessing the raw EEG and FMRI files for usage
 
-## Preprocessing Steps for FMRI 
+## Preprocessing Steps for FMRI using SPM GUI
 1.	Calculate VDM 
 Inputs: Phase Image, Magnitude Image, Anatomical Image, EPI for Unwrap
 Outputs: Voxel Displacement Map
@@ -16,9 +16,17 @@ a.	Input: Output of previous stage
 b.	Parameters: TR = 2.16, Number of slices = 68
 c.	Output: aCMRR
 4.	Coregister: Estimate Only
-a.	Inputs: Reference Image – Anatomical Image, Source Image- Mean unwarped image, Other images – Output of Slice timing
-b.	Output: Coregistered Images
-5.	Smoothing: Parameter [2 2 2]
+a.	Inputs: Reference Image – Mean unwarped image, Source Image- Anatomical Image
+b.	Output: Coregistered Anatomical Image
+c.  Output: 
+5.  Segmentation:
+a.  
+6.  Normalisation to MNI Space
+a.  Input: Forward Deformation = 
+7.	Smoothing
+a.  Input:
+b.  Parameters: Gaussian Kernel [8 8 8]
+
 
 General Information:
 1.  In anat folder anatomical images are present T_subXX.nii
