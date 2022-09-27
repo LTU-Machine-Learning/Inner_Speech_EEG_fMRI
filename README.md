@@ -2,6 +2,7 @@
 This repo contains all the code for preprocessing the raw EEG and FMRI files for usage
 
 ## Preprocessing Steps for FMRI using SPM GUI
+#### SPM Version 12 was used to generate the included .mat files
 1.	Calculate VDM 
 Inputs: Phase Image, Magnitude Image, Anatomical Image, EPI for Unwrap
 Outputs: Voxel Displacement Map
@@ -9,26 +10,26 @@ Parameters: Echo times [4.92 7.38], Total EPI readout time
 Echo spacing * number of echos = 33.92
 No brain masking
 2.	Realign and Unwrap
-  a.	Inputs: All images of the session, Voxel Displacement map
-  b.	Output: uCMRR
+     - Inputs: All images of the session, Voxel Displacement map
+     - Output: uCMRR
 3.	Slice Timing
-  a.	Input: Output of previous stage
-  b.	Parameters: TR = 2.16, Number of slices = 68
-  c.	Output: auCMRR
+     - Input: Output of previous stage
+     - Parameters: TR = 2.16, Number of slices = 68
+      - Output: auCMRR
 4.	Coregister: Estimate Only
-  a.	Inputs: Reference Image – Mean unwarped image, Source Image- Anatomical Image
-  b.	Output: Coregistered Anatomical Image (rT_)
+     - Inputs: Reference Image – Mean unwarped image, Source Image- Anatomical Image
+     - Output: Coregistered Anatomical Image (rT_)
 5.  Segmentation:
-  a.  Input: realigned anatomical image (rT_)
-  b.  Parameters: Forward Deformation
-  c.  Output: y_ prefix
+     - Input: realigned anatomical image (rT_)
+     - Parameters: Forward Deformation
+     - Output: y_ prefix
 6.  Normalisation to MNI Space
-  a.  Input: Deformation Field: y_ file from segmentation step, Images to Write: auCMRR
-  b.  Output: wauCMRR
+     - Input: Deformation Field: y_ file from segmentation step, Images to Write: auCMRR
+     - Output: wauCMRR
 7.	Smoothing
-  a.  Input: wauCMRR
-  b.  Parameters: Gaussian Kernel [8 8 8]
-  c.  Output: swauCMRR
+     - Input: wauCMRR
+     - Parameters: Gaussian Kernel [8 8 8]
+     - Output: swauCMRR
 
 
 General Information:
