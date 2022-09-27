@@ -1,6 +1,7 @@
 # InnerSpeech_EEGFMRI
 This repo contains all the code for preprocessing the raw EEG and FMRI files for usage
-Preprocessing Steps for FMRI 
+
+## Preprocessing Steps for FMRI 
 1.	Calculate VDM 
 Inputs: Phase Image, Magnitude Image, Anatomical Image, EPI for Unwrap
 Outputs: Voxel Displacement Map
@@ -25,3 +26,6 @@ General Information:
 3. Magnitude images are found in GRE6 and GRE5 for both sessions respectively. There are 2 magnitude files (XXXX_E1.nii and XXXX_e2.nii) in each folder. We use XXXX_e1.nii
 4. The functional images (EPI for Unwrap) is available in CMRR folder across al sessions in all subjects.
 They vary from 1039 to 1100 so extra attention must be paid for mapping
+
+## Preprocessing Steps for EEG
+Vibha and Raj put the text for preprocessing here!! as soon as possible 
