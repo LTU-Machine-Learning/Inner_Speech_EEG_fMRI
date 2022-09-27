@@ -9,23 +9,26 @@ Parameters: Echo times [4.92 7.38], Total EPI readout time
 Echo spacing * number of echos = 33.92
 No brain masking
 2.	Realign and Unwrap
-a.	Inputs: All images of the session, Voxel Displacement map
-b.	Output: uCMRR
+  a.	Inputs: All images of the session, Voxel Displacement map
+  b.	Output: uCMRR
 3.	Slice Timing
-a.	Input: Output of previous stage
-b.	Parameters: TR = 2.16, Number of slices = 68
-c.	Output: aCMRR
+  a.	Input: Output of previous stage
+  b.	Parameters: TR = 2.16, Number of slices = 68
+  c.	Output: auCMRR
 4.	Coregister: Estimate Only
-a.	Inputs: Reference Image – Mean unwarped image, Source Image- Anatomical Image
-b.	Output: Coregistered Anatomical Image
-c.  Output: 
+  a.	Inputs: Reference Image – Mean unwarped image, Source Image- Anatomical Image
+  b.	Output: Coregistered Anatomical Image (rT_)
 5.  Segmentation:
-a.  
+  a.  Input: realigned anatomical image (rT_)
+  b.  Parameters: Forward Deformation
+  c.  Output: y_ prefix
 6.  Normalisation to MNI Space
-a.  Input: Forward Deformation = 
+  a.  Input: Deformation Field: y_ file from segmentation step, Images to Write: auCMRR
+  b.  Output: wauCMRR
 7.	Smoothing
-a.  Input:
-b.  Parameters: Gaussian Kernel [8 8 8]
+  a.  Input: wauCMRR
+  b.  Parameters: Gaussian Kernel [8 8 8]
+  c.  Output: swauCMRR
 
 
 General Information:
