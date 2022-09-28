@@ -49,7 +49,9 @@ Vibha and Raj put the text for preprocessing here!! as soon as possible
 
 4. The preprocessing_pipeline.m will import the data (here it is in .bdf format) and do the preprocessing like filtering of data, referencing, removal of noise by ICA decomposition etc.
 
-5. After cleaning the data, we segment/epoch the continuous data by using script Program_for_extracting_label_from_gT.m
+5. At ICA decomposition part, we delete the components which correspond to motor-related artifacts such as blinking, jaw, neck, arm, or upper back. We performed this step by manual observation and scores shown by ICA decomposition tool. 
+
+6. After cleaning the data, we segment/epoch the continuous data by using script Program_for_extracting_label_from_gT.m
        Details:
 •	Channels 64
 •	Sampling rate: 512
