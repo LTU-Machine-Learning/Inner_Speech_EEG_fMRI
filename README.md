@@ -41,6 +41,9 @@ They vary from 1039 to 1100 so extra attention must be paid for mapping
 
 ## Preprocessing Steps for EEG
 Vibha and Raj put the text for preprocessing here!! as soon as possible 
+
+We have used EEG for processing. EEGLAB is an open source signal processing environment for electrophysiological signals running on Matlab and Octave. Download it from the official EEGLAB release from https://sccn.ucsd.edu/eeglab/download.php
+
 1. Start Matlab and use it for navigating to the folder containing EEGLAB.
 
 2. Type "eeglab" at the Matlab command prompt ">>" and press enter. You can see one pop out window which shows all the functions and modules available here in EEG.
