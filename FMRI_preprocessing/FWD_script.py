@@ -3,7 +3,7 @@ import PIL
 
 sub = '1'
 sess = '2'
-rp_path = 'X:\\CompSci\\ResearchProjects\\EJONeill\\Neuroimaging\\foteini\\NFTII\\sub-0'+sub+'\\Session'+sess+'\\CMRR\\rp_CMRR_sub0'+sub+'_sess0'+sess+'.txt'
+rp_path = '\\NFTII\\sub-0'+sub+'\\Session'+sess+'\\CMRR\\rp_CMRR_sub0'+sub+'_sess0'+sess+'.txt'
 plot_path = 'fd_plot_sub'+sub+'_sess' + sess +'.png'
 calc_path = 'fd_calc_sub'+sub+'_sess' + sess +'.txt'
 
