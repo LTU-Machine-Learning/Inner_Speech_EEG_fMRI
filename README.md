@@ -41,3 +41,21 @@ They vary from 1039 to 1100 so extra attention must be paid for mapping
 
 ## Preprocessing Steps for EEG
 Vibha and Raj put the text for preprocessing here!! as soon as possible 
+1. Start Matlab and use it for navigating to the folder containing EEGLAB.
+
+2. Type "eeglab" at the Matlab command prompt ">>" and press enter. You can see one pop out window which shows all the functions and modules available here in EEG.
+
+3. Now, we start preprocessing of our recorded data. The full description of pipeline stepwise has been written in preprocessing_pipeline.m
+
+4. The preprocessing_pipeline.m will import the data (here it is in .bdf format) and do the preprocessing like filtering of data, referencing, removal of noise by ICA decomposition etc.
+
+5. After cleaning the data, we segment/epoch the continuous data by using script Program_for_extracting_label_from_gT.m
+       Details:
+•	Channels 64
+•	Sampling rate: 512
+•	Number of stimuli: 960 which includes classes (320), fixation (320), relaxation (320)
+
+6. This Program_for_extracting_label_from_gT.m will make data suitable for further tasks; plotting and classification.
+
+**Note: Prepared scripts have detailing of each inetrnal steps.  
+
