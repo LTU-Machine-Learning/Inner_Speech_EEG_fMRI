@@ -8,7 +8,7 @@ SImistira Liwicki, F. et al. "Bimodal dataset on Inner speech". OpenNeuro https:
 ## Stimulation Protocol
 The EEG and fMRI modalities use the same experimental protocol developed with ePrime.
 
-## Preprocessing Steps for FMRI
+## Preprocessing Steps for fMRI
 SPM Version 12 was used to generate the included .mat files
 
 File = `preprocessing.mat`
@@ -47,7 +47,7 @@ Run `firstlevel.mat` for each subject and session separately to produce the beta
 Run `secondlevel.mat` to compute the group level statistics.
 
 
-To assess the framewise displacement for technical validation, use the `FWD_script.py`. Inputs for this should include the rp_ movement parameter files. Outputted will be a plot which can be saved to file.
+To assess the framewise displacement for technical validation, use the `FWD_script.py`. Inputs for this should include the rp_ movement parameter files. The output is a plot that can be saved to file.
 
 
 General Information:
