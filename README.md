@@ -11,7 +11,7 @@ The EEG and fMRI modalities use the same experimental protocol developed with eP
 ## Preprocessing Steps for FMRI using SPM GUI
 #### SPM Version 12 was used to generate the included .mat files
 
-*File = preprocessing.mat*
+File = `preprocessing.mat`
 1.	Calculate VDM 
      - Inputs: Phase Image, Magnitude Image, Anatomical Image, EPI for Unwrap
      - Outputs: Voxel Displacement Map
@@ -29,7 +29,7 @@ No brain masking
      - Inputs: Reference Image – Mean unwarped image, Source Image- Anatomical Image
      - Output: Coregistered Anatomical Image (rT_)
      
-*File = segmentNormalise.mat*
+File = `segmentNormalise.mat`
 
 5.  Segmentation:
      - Input: realigned anatomical image (rT_)
@@ -43,17 +43,17 @@ No brain masking
      - Parameters: Gaussian Kernel [8 8 8]
      - Output: swauCMRR
      
-Run *firstlevel.mat* for each subject and session separately to produce the beta images and contrasts. Input to this should also include the rp_ movement parameter files. Researchers may choose to use the beta images produced from this first level step for decoding, or the swauCMRR or wauCMRR for decoding of inner speech.
-Run *secondlevel.mat* to compute the group level statistics.
+Run `firstlevel.mat` for each subject and session separately to produce the beta images and contrasts. Input to this should also include the rp_ movement parameter files. Researchers may choose to use the beta images produced from this first level step for decoding, or the swauCMRR or wauCMRR for decoding of inner speech.
+Run `secondlevel.mat` to compute the group level statistics.
 
 
-To assess the framewise displacement for technical validation, use the *FWD_script.py*. Inputs for this should include the rp_ movement parameter files. Outputted will be a plot which can be saved to file.
+To assess the framewise displacement for technical validation, use the `FWD_script.py`. Inputs for this should include the rp_ movement parameter files. Outputted will be a plot which can be saved to file.
 
 
 General Information:
-1.  In anat folder anatomical images are present T_subXX.nii
-2. Phase images end with XXXXX_ph.nii and is available in GRE7 for Session 1 and GRE6 for session 2
-3. Magnitude images are found in GRE6 and GRE5 for both sessions respectively. There are 2 magnitude files (XXXX_E1.nii and XXXX_e2.nii) in each folder. We use XXXX_e1.nii
+1.  In anat folder anatomical images are present `T_subXX.nii`
+2. Phase images end with `XXXXX_ph.nii` and is available in GRE7 for Session 1 and GRE6 for session 2
+3. Magnitude images are found in GRE6 and GRE5 for both sessions respectively. There are 2 magnitude files (`XXXX_E1.nii` and `XXXX_e2.nii`) in each folder. We use `XXXX_e1.nii`
 4. The functional images (EPI for Unwrap) is available in CMRR folder across al sessions in all subjects.
 They vary from 1039 to 1100 so extra attention must be paid for mapping
 
