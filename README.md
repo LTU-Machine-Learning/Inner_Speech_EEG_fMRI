@@ -8,8 +8,8 @@ SImistira Liwicki, F. et al. "Bimodal dataset on Inner speech". OpenNeuro https:
 ## Stimulation Protocol
 The EEG and fMRI modalities use the same experimental protocol developed with ePrime.
 
-## Preprocessing Steps for FMRI using SPM GUI
-#### SPM Version 12 was used to generate the included .mat files
+## Preprocessing Steps for FMRI
+SPM Version 12 was used to generate the included .mat files
 
 File = `preprocessing.mat`
 1.	Calculate VDM 
