@@ -2,7 +2,7 @@
 This repository contains all the code for preprocessing the raw EEG and FMRI files of the bimodal Inner Speech Dataset.
 The dataset is publicly available in OpenNeuro: https://openneuro.org/datasets/ds004197
 ```bibtex
-SImistira Liwicki, F. et al. "Bimodal dataset on Inner speech". OpenNeuro https://doi:10.18112/openneuro.ds004197.v1.0.2 (2022)
+Simistira Liwicki, F. et al. "Bimodal dataset on Inner speech". OpenNeuro https://doi:10.18112/openneuro.ds004197.v1.0.2 (2022)
 ```
 
 ## Stimulation Protocol
