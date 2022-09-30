@@ -10,10 +10,12 @@ The EEG and fMRI modalities use the same experimental protocol developed with eP
 
 ## Preprocessing Steps for FMRI using SPM GUI
 #### SPM Version 12 was used to generate the included .mat files
+
+*File = preprocessing.mat*
 1.	Calculate VDM 
-Inputs: Phase Image, Magnitude Image, Anatomical Image, EPI for Unwrap
-Outputs: Voxel Displacement Map
-Parameters: Echo times [4.92 7.38], Total EPI readout time 
+     - Inputs: Phase Image, Magnitude Image, Anatomical Image, EPI for Unwrap
+     - Outputs: Voxel Displacement Map
+     - Parameters: Echo times [4.92 7.38], Total EPI readout time 
 Echo spacing * number of echos = 33.92
 No brain masking
 2.	Realign and Unwrap
@@ -26,6 +28,9 @@ No brain masking
 4.	Coregister: Estimate Only
      - Inputs: Reference Image – Mean unwarped image, Source Image- Anatomical Image
      - Output: Coregistered Anatomical Image (rT_)
+     
+*File = segmentNormalise.mat*
+
 5.  Segmentation:
      - Input: realigned anatomical image (rT_)
      - Parameters: Forward Deformation
@@ -37,6 +42,12 @@ No brain masking
      - Input: wauCMRR
      - Parameters: Gaussian Kernel [8 8 8]
      - Output: swauCMRR
+     
+Run *firstlevel.mat* for each subject and session separately to produce the beta images and contrasts. Input to this should also include the rp_ movement parameter files. Researchers may choose to use the beta images produced from this first level step for decoding, or the swauCMRR or wauCMRR for decoding of inner speech.
+Run *secondlevel.mat* to compute the group level statistics.
+
+
+To assess the framewise displacement for technical validation, use the FWD_script.py. Inputs for this should include the rp_ movement parameter files. Outputted will be a plot which can be saved to file.
 
 
 General Information:
