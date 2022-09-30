@@ -1,4 +1,4 @@
-# Inner Speech Bimodal Dataset EEG/FMRI
+# Inner Speech Bimodal Dataset EEG/fMRI
 This repository contains all the code for preprocessing the raw EEG and FMRI files of the bimodal Inner Speech Dataset.
 The dataset is publicly available in OpenNeuro: https://openneuro.org/datasets/ds004197
 ```bibtex
