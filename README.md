@@ -5,6 +5,10 @@ The dataset is publicly available in OpenNeuro: https://openneuro.org/datasets/d
 Simistira Liwicki, F. et al. "Bimodal dataset on Inner speech". OpenNeuro https://doi:10.18112/openneuro.ds004197.v1.0.2 (2022)
 ```
 
+The publication is available as a preprint at biorxiv:
+https://www.biorxiv.org/content/10.1101/2022.05.24.492109v3 
+
+
 ## Stimulation Protocol
 The EEG and fMRI modalities use the same experimental protocol developed with ePrime.
 
@@ -82,11 +86,16 @@ EEGLAB is an open source signal processing environment for electrophysiological 
 
 ## Citing this work
 ```bibtex
-@article{liwicki2022bimodal,
-  title={Bimodal electroencephalography-functional magnetic resonance imaging dataset for inner-speech recognition},
-  author={Liwicki, Foteini Simistira and Gupta, Vibha and Saini, Rajkumar and De, Kanjar and Abid, Nosheen and Rakesh, Sumit and Wellington, Scott and Wilson, Holly and Liwicki, Marcus and Eriksson, Johan},
-  journal={bioRxiv},
-  year={2022},
-  publisher={Cold Spring Harbor Laboratory}
+@article {Simistira Liwicki2022.05.24.492109,
+	author = {Simistira Liwicki, Foteini and Gupta, Vibha and Saini, Rajkumar and De, Kanjar and Abid, Nosheen and Rakesh, Sumit and Wellington, Scott and Wilson, Holly and Liwicki, Marcus and Eriksson, Johan},
+	title = {Bimodal electroencephalography-functional magnetic resonance imaging dataset for inner-speech recognition},
+	elocation-id = {2022.05.24.492109},
+	year = {2022},
+	doi = {10.1101/2022.05.24.492109},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2022/11/30/2022.05.24.492109},
+	eprint = {https://www.biorxiv.org/content/early/2022/11/30/2022.05.24.492109.full.pdf},
+	journal = {bioRxiv}
 }
+
 ```
