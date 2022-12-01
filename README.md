@@ -1,4 +1,4 @@
-# Inner Speech Bimodal Dataset EEG/fMRI
+# Bimodal electroencephalography-functional magnetic resonance imaging dataset for inner-speech recognition
 This repository contains all the code for preprocessing the raw EEG and fMRI data of the bimodal Inner Speech Dataset.
 The dataset is publicly available in OpenNeuro: https://openneuro.org/datasets/ds004197
 ```bibtex
@@ -82,5 +82,11 @@ EEGLAB is an open source signal processing environment for electrophysiological 
 
 ## Citing this work
 ```bibtex
-TODO
+@article{liwicki2022bimodal,
+  title={Bimodal electroencephalography-functional magnetic resonance imaging dataset for inner-speech recognition},
+  author={Liwicki, Foteini Simistira and Gupta, Vibha and Saini, Rajkumar and De, Kanjar and Abid, Nosheen and Rakesh, Sumit and Wellington, Scott and Wilson, Holly and Liwicki, Marcus and Eriksson, Johan},
+  journal={bioRxiv},
+  year={2022},
+  publisher={Cold Spring Harbor Laboratory}
+}
 ```
