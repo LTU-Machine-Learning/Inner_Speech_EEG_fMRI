@@ -15,7 +15,7 @@ for numChans=1:size(EEG.data,1)
 end
 
 %%3. Filter the data
-EEG = pop_eegfiltnew(EEG, 'locutoff',0.1,'hicutoff',50,'plotfreqz',1);
+EEG = pop_eegfiltnew(EEG, 'locutoff',1,'hicutoff',50,'plotfreqz',1);
 EEG = eeg_checkset( EEG );
 
 %%4. Put channel location 
