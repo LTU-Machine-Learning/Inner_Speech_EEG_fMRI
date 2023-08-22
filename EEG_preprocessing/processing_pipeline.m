@@ -52,7 +52,3 @@ EEG = eeg_checkset( EEG );
 components_to_delete=[];
 EEG = pop_subcomp( EEG, components_to_delete, 0);
 EEG = eeg_checkset( EEG );
-
-%%Extracting epoch using handwritten scripts
-
-run('Program_for_extracting_label_from_gT.m');
