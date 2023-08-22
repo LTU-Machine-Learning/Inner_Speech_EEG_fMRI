@@ -75,13 +75,6 @@ EEGLAB is an open source signal processing environment for electrophysiological 
 
 5. During the ICA decomposition part, we delete the components which correspond to motor-related artifacts such as blinking, jaw, neck, arm, or upper back. We performed this step by manual observation the scores shown by the ICA decomposition tool. 
 
-6. After cleaning the data, we segment/epoch the continuous data using the script `Program_for_extracting_label_from_gT.m`
-     - Channels: 64
-     - Sampling rate: 512Hz
-     - Number of stimuli: 960 which includes classes (320), fixation (320), relaxation (320)
-
-6. `Program_for_extracting_label_from_gT.m` will make the data suitable for further tasks; plotting and classification.
-
 **Note: documentation is included in the scripts.
 
 ## Citing this work
