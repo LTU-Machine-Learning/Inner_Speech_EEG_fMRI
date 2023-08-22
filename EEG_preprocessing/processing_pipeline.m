@@ -1,8 +1,8 @@
 % EEGLAB history file generated on the 29-Jun-2022
 % ------------------------------------------------
 
-%%%1. Importing the Biosemi raw data file. Using reference channel 48 (Cz)
-%%%upon import
+%%% 1. Importing the Biosemi raw data file. Using reference channel 48 (Cz)
+%%% upon import
 
 % EEG.etc.eeglabvers = '2022.0'; % this tracks which version of EEGLAB is being used, you may ignore it
 % EEG = pop_readbdf('subject02_session01.bdf', [1 1306] ,73,48);
@@ -55,4 +55,4 @@ EEG = eeg_checkset( EEG );
 
 %%Extracting epoch using handwritten scripts
 
-Program_for_extracting_label_from_gT.m
+run('Program_for_extracting_label_from_gT.m');
